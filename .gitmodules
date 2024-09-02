@@ -7,3 +7,6 @@
 [submodule "HandRecog_yolov5n/yolov5"]
 	path = HandRecog_yolov5n/yolov5
 	url = https://github.com/ultralytics/yolov5.git
+[submodule "HandGestureRecognition_yolov8n/ultralytics"]
+	path = HandGestureRecognition_yolov8n/ultralytics
+	url = https://github.com/ultralytics/ultralytics.git

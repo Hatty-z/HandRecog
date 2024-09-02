@@ -1,0 +1,5 @@
+train: D:\Projects\HandGestureRecognition\dataset\train
+val: D:\Projects\HandGestureRecognition\dataset\val
+
+nc: 10
+names: ['palm', 'l', 'fist', 'fist_moved', 'thumb', 'index', 'ok', 'palm_moved', 'c', 'down']
