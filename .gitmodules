@@ -4,3 +4,6 @@
 [submodule "HandRecog_esp2/components/esp-dl"]
 	path = HandRecog_esp2/components/esp-dl
 	url = git@github.com:espressif/esp-dl.git
+[submodule "HandRecog_yolov5n/yolov5"]
+	path = HandRecog_yolov5n/yolov5
+	url = https://github.com/ultralytics/yolov5.git
