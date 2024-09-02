@@ -1,0 +1,151 @@
+[1/5] cmd.exe /C "cd /D D:\Projects\HandRecog_esp\build\esp-idf\esptool_py && D:\esp\.espressif\python_env\idf5.3_py3.8_env\Scripts\python.exe D:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Projects/HandRecog_esp/build/partition_table/partition-table.bin D:/Projects/HandRecog_esp/build/HandRecog_esp.bin"
+HandRecog_esp.bin binary size 0x236620 bytes. Smallest app partition is 0x300000 bytes. 0xc99e0 bytes (26%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\HandRecog_esp\build\bootloader\esp-idf\esptool_py && D:\esp\.espressif\python_env\idf5.3_py3.8_env\Scripts\python.exe D:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Projects/HandRecog_esp/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/3] cmd.exe /C "cd /D D:\esp\esp-idf\components\esptool_py && D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/esp/esp-idf esptool.py --chip esp32s3 -p COM6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 HandRecog_esp.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM6
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: dc:da:0c:18:e7:28
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00246fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21088 bytes to 13044...
+Writing at 0x00000000... (100 %)
+Wrote 21088 bytes (13044 compressed) at 0x00000000 in 0.7 seconds (effective 244.6 kbit/s)...
+Hash of data verified.
+Compressed 2319904 bytes to 1844525...
+Writing at 0x00010000... (0 %)
+Writing at 0x0001a59a... (1 %)
+Writing at 0x0001e89e... (2 %)
+Writing at 0x00022dfc... (3 %)
+Writing at 0x000272cd... (4 %)
+Writing at 0x0002b828... (5 %)
+Writing at 0x0002fc30... (6 %)
+Writing at 0x00034189... (7 %)
+Writing at 0x0003882c... (7 %)
+Writing at 0x0003cf3a... (8 %)
+Writing at 0x00041605... (9 %)
+Writing at 0x00045d16... (10 %)
+Writing at 0x0004a3bc... (11 %)
+Writing at 0x0004eb06... (12 %)
+Writing at 0x0005323d... (13 %)
+Writing at 0x0005797c... (14 %)
+Writing at 0x0005c08f... (15 %)
+Writing at 0x000607da... (15 %)
+Writing at 0x00064efc... (16 %)
+Writing at 0x00069492... (17 %)
+Writing at 0x0006da24... (18 %)
+Writing at 0x00071f99... (19 %)
+Writing at 0x0007656a... (20 %)
+Writing at 0x0007aa2c... (21 %)
+Writing at 0x0007efbc... (22 %)
+Writing at 0x00083560... (23 %)
+Writing at 0x00087ba2... (23 %)
+Writing at 0x0008c13a... (24 %)
+Writing at 0x0009079a... (25 %)
+Writing at 0x00094cf2... (26 %)
+Writing at 0x000993a1... (27 %)
+Writing at 0x0009dbb1... (28 %)
+Writing at 0x000a23a8... (29 %)
+Writing at 0x000a6b6e... (30 %)
+Writing at 0x000ab360... (30 %)
+Writing at 0x000afb15... (31 %)
+Writing at 0x000b40ed... (32 %)
+Writing at 0x000b8698... (33 %)
+Writing at 0x000bcc4f... (34 %)
+Writing at 0x000c1235... (35 %)
+Writing at 0x000c5760... (36 %)
+Writing at 0x000c9d14... (37 %)
+Writing at 0x000ce3bd... (38 %)
+Writing at 0x000d2abb... (38 %)
+Writing at 0x000d715f... (39 %)
+Writing at 0x000db863... (40 %)
+Writing at 0x000dff06... (41 %)
+Writing at 0x000e4564... (42 %)
+Writing at 0x000e8b6e... (43 %)
+Writing at 0x000ed14b... (44 %)
+Writing at 0x000f1702... (45 %)
+Writing at 0x000f5d09... (46 %)
+Writing at 0x000fa298... (46 %)
+Writing at 0x000fe7c0... (47 %)
+Writing at 0x00102d57... (48 %)
+Writing at 0x001072f4... (49 %)
+Writing at 0x0010b88d... (50 %)
+Writing at 0x0010fdfc... (51 %)
+Writing at 0x00114385... (52 %)
+Writing at 0x00118b42... (53 %)
+Writing at 0x0011d367... (53 %)
+Writing at 0x00121b28... (54 %)
+Writing at 0x00126349... (55 %)
+Writing at 0x0012aae6... (56 %)
+Writing at 0x0012f20c... (57 %)
+Writing at 0x001338f1... (58 %)
+Writing at 0x00137fb8... (59 %)
+Writing at 0x0013c65b... (60 %)
+Writing at 0x00140d5c... (61 %)
+Writing at 0x001453ee... (61 %)
+Writing at 0x001499b9... (62 %)
+Writing at 0x0014df5c... (63 %)
+Writing at 0x0015253e... (64 %)
+Writing at 0x00156b1e... (65 %)
+Writing at 0x0015b084... (66 %)
+Writing at 0x0015f618... (67 %)
+Writing at 0x00163cb5... (68 %)
+Writing at 0x001683d8... (69 %)
+Writing at 0x0016ca96... (69 %)
+Writing at 0x00171216... (70 %)
+Writing at 0x001758cf... (71 %)
+Writing at 0x00179fd1... (72 %)
+Writing at 0x0017e6ea... (73 %)
+Writing at 0x00182dfc... (74 %)
+Writing at 0x001874df... (75 %)
+Writing at 0x0018bbfe... (76 %)
+Writing at 0x00190300... (76 %)
+Writing at 0x001949a0... (77 %)
+Writing at 0x001990ae... (78 %)
+Writing at 0x0019d808... (79 %)
+Writing at 0x001a1f6c... (80 %)
+Writing at 0x001a6642... (81 %)
+Writing at 0x001aacc9... (82 %)
+Writing at 0x001aef51... (83 %)
+Writing at 0x001b31f6... (84 %)
+Writing at 0x001b7478... (84 %)
+Writing at 0x001bb6e1... (85 %)
+Writing at 0x001bf8f7... (86 %)
+Writing at 0x001c3ae5... (87 %)
+Writing at 0x001cac9c... (88 %)
+Writing at 0x001d37c4... (89 %)
+Writing at 0x001d9e97... (90 %)
+Writing at 0x001e028d... (91 %)
+Writing at 0x001e81be... (92 %)
+Writing at 0x001f1153... (92 %)
+Writing at 0x001f9b41... (93 %)
+Writing at 0x001ffbd0... (94 %)
+Writing at 0x0020537a... (95 %)
+Writing at 0x0020da86... (96 %)
+Writing at 0x0021715d... (97 %)
+Writing at 0x00234a8d... (98 %)
+Writing at 0x0023c31a... (99 %)
+Writing at 0x00242ba4... (100 %)
+Wrote 2319904 bytes (1844525 compressed) at 0x00010000 in 43.2 seconds (effective 429.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 125...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (125 compressed) at 0x00008000 in 0.1 seconds (effective 320.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+-D SERIAL_TOOL=D:/esp/.espressif/python_env/idf5.3_py3.8_env/Scripts/python.exe;;D:/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Projects/HandRecog_esp/build -P D:/esp/esp-idf/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,41 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40378b33: dl_tie728_s16_unaligned_relu_11c at ??:?
+[0m
+[0;33m0x40378b98: dl_tie718_s16_unaligned_relu_11c_0 at dl_tie728_s16_relu.S.obj:?
+0x40378ba4: dl_tie718_s16_unaligned_relu_11c_0 at dl_tie728_s16_relu.S.obj:?
+[0m
+[0;33m0x40378b30: dl_tie728_s16_unaligned_relu_11c at ??:?
+0x4202e641: void dl::base::activation_shell<short, short, long>(dl::base::ArgsType<short> const&, void (*)(short*, short*, void*), void (*)(short*, short*, dl::base::ArgsType<short> const&)) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/base/dl_base.hpp:1617
+ (inlined by) void dl::base::relu<short>(void*) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/base/dl_base_relu.cpp:59
+0x4202cfef: dl::nn::relu(dl::Tensor<short>&, dl::Tensor<short>&, std::vector<int, std::allocator<int> > const&) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/nn/src/dl_nn_relu.cpp:29
+0x4200ac01: dl::layer::Relu<short>::call(dl::Tensor<short>&, std::vector<int, std::allocator<int> > const&) at D:/Projects/HandRecog_esp/components/esp-dl/include/layer/dl_layer_relu.hpp:117
+0x4200b793: HANDRECOGNITION::call(dl::Tensor<short>&) at D:/Projects/HandRecog_esp/model/model_define.hpp:103 (discriminator 2)
+0x4202d16d: dl::layer::Model<short>::forward(dl::Tensor<short>&) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/layer/src/dl_layer_model.cpp:30
+0x4200b40a: app_main at D:/Projects/HandRecog_esp/main/app_main.cpp:37
+0x4206321f: main_task at D:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b60d: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375a6c: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40378b33: dl_tie728_s16_unaligned_relu_11c at ??:?
+[0m
+[0;33m0x40378b98: dl_tie718_s16_unaligned_relu_11c_0 at dl_tie728_s16_relu.S.obj:?
+0x40378ba4: dl_tie718_s16_unaligned_relu_11c_0 at dl_tie728_s16_relu.S.obj:?
+[0m
+[0;33m0x40378b30: dl_tie728_s16_unaligned_relu_11c at ??:?
+0x4202e641: void dl::base::activation_shell<short, short, long>(dl::base::ArgsType<short> const&, void (*)(short*, short*, void*), void (*)(short*, short*, dl::base::ArgsType<short> const&)) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/base/dl_base.hpp:1617
+ (inlined by) void dl::base::relu<short>(void*) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/base/dl_base_relu.cpp:59
+0x4202cfef: dl::nn::relu(dl::Tensor<short>&, dl::Tensor<short>&, std::vector<int, std::allocator<int> > const&) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/nn/src/dl_nn_relu.cpp:29
+0x4200ac01: dl::layer::Relu<short>::call(dl::Tensor<short>&, std::vector<int, std::allocator<int> > const&) at D:/Projects/HandRecog_esp/components/esp-dl/include/layer/dl_layer_relu.hpp:117
+0x4200b793: HANDRECOGNITION::call(dl::Tensor<short>&) at D:/Projects/HandRecog_esp/model/model_define.hpp:103 (discriminator 2)
+0x4202d16d: dl::layer::Model<short>::forward(dl::Tensor<short>&) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/layer/src/dl_layer_model.cpp:30
+0x4200b40a: app_main at D:/Projects/HandRecog_esp/main/app_main.cpp:37
+0x4206321f: main_task at D:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b60d: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375a6c: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m
