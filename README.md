@@ -6,7 +6,7 @@
 3. Connect the ESP32-S3 CAM with an OV2640 module, set up a web server to capture images, and recognize the gestures in the captured images.
 
 [kaggle下载手势识别数据集(dataset)](https://www.kaggle.com/datasets/gti-upm/leapgestrecog)
-learn more in [my blog](https://hatty.top/)
+learn more in [my blog](https://hatty.top/2024/09/17/%E6%89%8B%E5%8A%BF%E8%AF%86%E5%88%AB%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2%E5%9C%A8esp32s3%EF%BC%88%E4%B8%80%EF%BC%89/)
 
 ## 手势识别模型
 ### 1. 数据
