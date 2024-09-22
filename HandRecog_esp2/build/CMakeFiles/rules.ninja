@@ -1796,6 +1796,35 @@ rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning_
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER____idf_espressif__esp32-camera_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = D:\esp\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER____idf_espressif__esp32-camera_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = D:\esp\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER____idf_espressif__esp32-camera_
+  command = cmd.exe /C "$PRE_LINK && D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER____idf_main_
@@ -1818,7 +1847,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\Projects\HandRecog_esp1 -BD:\Projects\HandRecog_esp1\build
+  command = D:\esp\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\Projects\HandRecog\HandRecog_esp2 -BD:\Projects\HandRecog\HandRecog_esp2\build
   description = Re-running CMake...
   generator = 1
 

@@ -6,7 +6,7 @@ set(srcs            app_main.cpp
 
 set(include_dirs    ../model)
 
-set(requires freertos esp-dl esp_timer)
+set(requires freertos esp-dl esp_timer esp_http_server esp_wifi nvs_flash esp_system)
 
 idf_component_register(SRCS ${srcs} INCLUDE_DIRS ${include_dirs} REQUIRES ${requires})
 

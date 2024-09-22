@@ -1,4 +1,4 @@
-# Install script for directory: D:/Projects/HandRecog_esp1/main
+# Install script for directory: D:/Projects/HandRecog/HandRecog_esp2/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

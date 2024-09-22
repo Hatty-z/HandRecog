@@ -1,0 +1,70 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403743c0: _DoubleExceptionVector at D:/esp/esp-idf/components/xtensa/xtensa_vectors.S:564
+[0m
+[0;33m0x420a1d10: dl::Tensor<short>::set_shape(std::vector<int, std::allocator<int> >) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/typedef/src/dl_variable.cpp:28 (discriminator 3)
+0x420a1d1d: dl::Tensor<short>::set_shape(std::vector<int, std::allocator<int> >) at /home/gansichen/Workspace/delete/aigit/master/dl/components/dl/typedef/src/dl_variable.cpp:26 (discriminator 3)
+[0m
+[0;33m0x403743bd: _UserExceptionVector at ??:?
+[0m
+[0;33m0x40375dc8: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4037768f: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m0x4037768c: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+0x42016d27: ll_cam_vsync_isr at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:106
+0x40376bb9: shared_intr_isr at D:/esp/esp-idf/components/esp_hw_support/intr_alloc.c:445
+0x40377c31: _xt_lowint1 at D:/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037be37: xt_utils_wait_for_intr at D:/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at D:/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x4200434e: esp_vApplicationIdleHook at D:/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40381615: prvIdleTask at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x40380405: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375dc8: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4037768f: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m0x4037768c: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+0x42016d27: ll_cam_vsync_isr at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:106
+0x40376bb9: shared_intr_isr at D:/esp/esp-idf/components/esp_hw_support/intr_alloc.c:445
+0x40377c31: _xt_lowint1 at D:/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037be37: xt_utils_wait_for_intr at D:/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at D:/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x4200434e: esp_vApplicationIdleHook at D:/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40381615: prvIdleTask at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x40380405: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375dc8: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4037768f: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m0x4037768c: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+0x42016d27: ll_cam_vsync_isr at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:106
+0x40376bb9: shared_intr_isr at D:/esp/esp-idf/components/esp_hw_support/intr_alloc.c:445
+0x40377c31: _xt_lowint1 at D:/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037be37: xt_utils_wait_for_intr at D:/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at D:/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x4200434e: esp_vApplicationIdleHook at D:/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40381615: prvIdleTask at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x40380405: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375dc8: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x4037768f: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+[0m
+[0;33m0x4037768c: ll_cam_send_event at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/driver/cam_hal.c:107
+0x42016d27: ll_cam_vsync_isr at D:/Projects/HandRecog/HandRecog_esp2/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:106
+0x40376bb9: shared_intr_isr at D:/esp/esp-idf/components/esp_hw_support/intr_alloc.c:445
+0x40377c31: _xt_lowint1 at D:/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037be37: xt_utils_wait_for_intr at D:/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at D:/esp/esp-idf/components/esp_hw_support/cpu.c:55
+0x4200434e: esp_vApplicationIdleHook at D:/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40381615: prvIdleTask at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4344 (discriminator 1)
+0x40380405: vPortTaskWrapper at D:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375dc8: esp_restart_noos at D:/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m
